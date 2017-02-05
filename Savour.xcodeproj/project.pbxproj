@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AEA08D7E3CA53B2FA19DA5F5 /* Pods_SavourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C7DDAA2EAB92F1362B49B8 /* Pods_SavourTests.framework */; };
+		BF0440759B2626B77380E9D1 /* Pods_Savour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD9DE83AE7FE783D0D33FEB /* Pods_Savour.framework */; };
+		CF572B1A1E46F86800CAEC10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B191E46F86800CAEC10 /* AppDelegate.swift */; };
+		CF572B211E46F86800CAEC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF572B201E46F86800CAEC10 /* Assets.xcassets */; };
+		CF572B241E46F86800CAEC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF572B221E46F86800CAEC10 /* LaunchScreen.storyboard */; };
+		CF572B2F1E46F86900CAEC10 /* SavourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B2E1E46F86900CAEC10 /* SavourTests.swift */; };
+		CF572B3A1E46F86900CAEC10 /* SavourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B391E46F86900CAEC10 /* SavourUITests.swift */; };
+		CF572B481E46FDCF00CAEC10 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF572B471E46FDCF00CAEC10 /* Auth0.plist */; };
+		CF572B4C1E46FE4E00CAEC10 /* SVLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B4B1E46FE4E00CAEC10 /* SVLoginManager.swift */; };
+		CF572B4E1E46FFAD00CAEC10 /* SVRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B4D1E46FFAD00CAEC10 /* SVRootViewController.swift */; };
+		CF572B501E47006500CAEC10 /* SVLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B4F1E47006500CAEC10 /* SVLoginViewController.swift */; };
+		CF572B521E47008500CAEC10 /* SVUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B511E47008500CAEC10 /* SVUser.swift */; };
+		CF572B541E4700CD00CAEC10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B531E4700CD00CAEC10 /* Constants.swift */; };
+		F607AF15B8E5B72B2E7D8E4A /* Pods_SavourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF0E738B87FCF0D37B890EE /* Pods_SavourUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF572B2B1E46F86900CAEC10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF572B0E1E46F86800CAEC10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF572B151E46F86800CAEC10;
+			remoteInfo = Savour;
+		};
+		CF572B361E46F86900CAEC10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF572B0E1E46F86800CAEC10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF572B151E46F86800CAEC10;
+			remoteInfo = Savour;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BD9DE83AE7FE783D0D33FEB /* Pods_Savour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Savour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF0E738B87FCF0D37B890EE /* Pods_SavourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D325B2DCC16021CA0FBF8F1 /* Pods-SavourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavourUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavourUITests/Pods-SavourUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		37CF83CA9F6C03028905C6A4 /* Pods-SavourUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavourUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SavourUITests/Pods-SavourUITests.release.xcconfig"; sourceTree = "<group>"; };
+		44BBDFA15E5C06A44AA0EC33 /* Pods-Savour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Savour.release.xcconfig"; path = "Pods/Target Support Files/Pods-Savour/Pods-Savour.release.xcconfig"; sourceTree = "<group>"; };
+		CF572B161E46F86800CAEC10 /* Savour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Savour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF572B191E46F86800CAEC10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF572B201E46F86800CAEC10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF572B231E46F86800CAEC10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF572B251E46F86800CAEC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF572B2A1E46F86900CAEC10 /* SavourTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavourTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF572B2E1E46F86900CAEC10 /* SavourTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavourTests.swift; sourceTree = "<group>"; };
+		CF572B301E46F86900CAEC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF572B351E46F86900CAEC10 /* SavourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF572B391E46F86900CAEC10 /* SavourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavourUITests.swift; sourceTree = "<group>"; };
+		CF572B3B1E46F86900CAEC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF572B471E46FDCF00CAEC10 /* Auth0.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
+		CF572B4B1E46FE4E00CAEC10 /* SVLoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVLoginManager.swift; sourceTree = "<group>"; };
+		CF572B4D1E46FFAD00CAEC10 /* SVRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVRootViewController.swift; sourceTree = "<group>"; };
+		CF572B4F1E47006500CAEC10 /* SVLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVLoginViewController.swift; sourceTree = "<group>"; };
+		CF572B511E47008500CAEC10 /* SVUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVUser.swift; sourceTree = "<group>"; };
+		CF572B531E4700CD00CAEC10 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB4619E628B0FF4AAB5B20D5 /* Pods-SavourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavourTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavourTests/Pods-SavourTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5C7DDAA2EAB92F1362B49B8 /* Pods_SavourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67D4D2408B0F6A48E1EA3DE /* Pods-SavourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavourTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SavourTests/Pods-SavourTests.release.xcconfig"; sourceTree = "<group>"; };
+		F7593120259333CF36ABF9C4 /* Pods-Savour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Savour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Savour/Pods-Savour.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF572B131E46F86800CAEC10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0440759B2626B77380E9D1 /* Pods_Savour.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF572B271E46F86900CAEC10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEA08D7E3CA53B2FA19DA5F5 /* Pods_SavourTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF572B321E46F86900CAEC10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F607AF15B8E5B72B2E7D8E4A /* Pods_SavourUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E3AE38C8A3335996299064E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7593120259333CF36ABF9C4 /* Pods-Savour.debug.xcconfig */,
+				44BBDFA15E5C06A44AA0EC33 /* Pods-Savour.release.xcconfig */,
+				DB4619E628B0FF4AAB5B20D5 /* Pods-SavourTests.debug.xcconfig */,
+				E67D4D2408B0F6A48E1EA3DE /* Pods-SavourTests.release.xcconfig */,
+				1D325B2DCC16021CA0FBF8F1 /* Pods-SavourUITests.debug.xcconfig */,
+				37CF83CA9F6C03028905C6A4 /* Pods-SavourUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A9915455025EA634DC21091 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BD9DE83AE7FE783D0D33FEB /* Pods_Savour.framework */,
+				E5C7DDAA2EAB92F1362B49B8 /* Pods_SavourTests.framework */,
+				1AF0E738B87FCF0D37B890EE /* Pods_SavourUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF572B0D1E46F86800CAEC10 = {
+			isa = PBXGroup;
+			children = (
+				CF572B181E46F86800CAEC10 /* Savour */,
+				CF572B2D1E46F86900CAEC10 /* SavourTests */,
+				CF572B381E46F86900CAEC10 /* SavourUITests */,
+				CF572B171E46F86800CAEC10 /* Products */,
+				4E3AE38C8A3335996299064E /* Pods */,
+				5A9915455025EA634DC21091 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF572B171E46F86800CAEC10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF572B161E46F86800CAEC10 /* Savour.app */,
+				CF572B2A1E46F86900CAEC10 /* SavourTests.xctest */,
+				CF572B351E46F86900CAEC10 /* SavourUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF572B181E46F86800CAEC10 /* Savour */ = {
+			isa = PBXGroup;
+			children = (
+				CF572B491E46FDD800CAEC10 /* UserManagement */,
+				CF572B4A1E46FDE500CAEC10 /* ViewController */,
+				CF572B191E46F86800CAEC10 /* AppDelegate.swift */,
+				CF572B531E4700CD00CAEC10 /* Constants.swift */,
+				CF572B201E46F86800CAEC10 /* Assets.xcassets */,
+				CF572B221E46F86800CAEC10 /* LaunchScreen.storyboard */,
+				CF572B251E46F86800CAEC10 /* Info.plist */,
+				CF572B471E46FDCF00CAEC10 /* Auth0.plist */,
+			);
+			path = Savour;
+			sourceTree = "<group>";
+		};
+		CF572B2D1E46F86900CAEC10 /* SavourTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF572B2E1E46F86900CAEC10 /* SavourTests.swift */,
+				CF572B301E46F86900CAEC10 /* Info.plist */,
+			);
+			path = SavourTests;
+			sourceTree = "<group>";
+		};
+		CF572B381E46F86900CAEC10 /* SavourUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF572B391E46F86900CAEC10 /* SavourUITests.swift */,
+				CF572B3B1E46F86900CAEC10 /* Info.plist */,
+			);
+			path = SavourUITests;
+			sourceTree = "<group>";
+		};
+		CF572B491E46FDD800CAEC10 /* UserManagement */ = {
+			isa = PBXGroup;
+			children = (
+				CF572B4B1E46FE4E00CAEC10 /* SVLoginManager.swift */,
+				CF572B4F1E47006500CAEC10 /* SVLoginViewController.swift */,
+				CF572B511E47008500CAEC10 /* SVUser.swift */,
+			);
+			path = UserManagement;
+			sourceTree = "<group>";
+		};
+		CF572B4A1E46FDE500CAEC10 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CF572B4D1E46FFAD00CAEC10 /* SVRootViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF572B151E46F86800CAEC10 /* Savour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF572B3E1E46F86900CAEC10 /* Build configuration list for PBXNativeTarget "Savour" */;
+			buildPhases = (
+				6971EEE83E57C134280B3013 /* [CP] Check Pods Manifest.lock */,
+				CF572B121E46F86800CAEC10 /* Sources */,
+				CF572B131E46F86800CAEC10 /* Frameworks */,
+				CF572B141E46F86800CAEC10 /* Resources */,
+				4590C46342EE5F1E75E8AD13 /* [CP] Embed Pods Frameworks */,
+				4486FB728694AE2D747C3DEA /* [CP] Copy Pods Resources */,
+				CF572B551E47033300CAEC10 /* Swiftlint Autocorrect */,
+				CF572B561E47033900CAEC10 /* Swiftlint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Savour;
+			productName = Savour;
+			productReference = CF572B161E46F86800CAEC10 /* Savour.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF572B291E46F86900CAEC10 /* SavourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF572B411E46F86900CAEC10 /* Build configuration list for PBXNativeTarget "SavourTests" */;
+			buildPhases = (
+				965965F6FB744EEB43A58606 /* [CP] Check Pods Manifest.lock */,
+				CF572B261E46F86900CAEC10 /* Sources */,
+				CF572B271E46F86900CAEC10 /* Frameworks */,
+				CF572B281E46F86900CAEC10 /* Resources */,
+				E0FB3BCBCA986056A1E9D01A /* [CP] Embed Pods Frameworks */,
+				EDE3EAD9A36E3FDA484F4D27 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF572B2C1E46F86900CAEC10 /* PBXTargetDependency */,
+			);
+			name = SavourTests;
+			productName = SavourTests;
+			productReference = CF572B2A1E46F86900CAEC10 /* SavourTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF572B341E46F86900CAEC10 /* SavourUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF572B441E46F86900CAEC10 /* Build configuration list for PBXNativeTarget "SavourUITests" */;
+			buildPhases = (
+				1E3476C89D44D7E29AE424ED /* [CP] Check Pods Manifest.lock */,
+				CF572B311E46F86900CAEC10 /* Sources */,
+				CF572B321E46F86900CAEC10 /* Frameworks */,
+				CF572B331E46F86900CAEC10 /* Resources */,
+				805CE009DB47D80C2C4AB431 /* [CP] Embed Pods Frameworks */,
+				9C87377DBF6429A930A720B7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF572B371E46F86900CAEC10 /* PBXTargetDependency */,
+			);
+			name = SavourUITests;
+			productName = SavourUITests;
+			productReference = CF572B351E46F86900CAEC10 /* SavourUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF572B0E1E46F86800CAEC10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = iCHEF;
+				TargetAttributes = {
+					CF572B151E46F86800CAEC10 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 92V759CL73;
+						ProvisioningStyle = Automatic;
+					};
+					CF572B291E46F86900CAEC10 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 92V759CL73;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF572B151E46F86800CAEC10;
+					};
+					CF572B341E46F86900CAEC10 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 92V759CL73;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CF572B151E46F86800CAEC10;
+					};
+				};
+			};
+			buildConfigurationList = CF572B111E46F86800CAEC10 /* Build configuration list for PBXProject "Savour" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF572B0D1E46F86800CAEC10;
+			productRefGroup = CF572B171E46F86800CAEC10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF572B151E46F86800CAEC10 /* Savour */,
+				CF572B291E46F86900CAEC10 /* SavourTests */,
+				CF572B341E46F86900CAEC10 /* SavourUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF572B141E46F86800CAEC10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF572B241E46F86800CAEC10 /* LaunchScreen.storyboard in Resources */,
+				CF572B211E46F86800CAEC10 /* Assets.xcassets in Resources */,
+				CF572B481E46FDCF00CAEC10 /* Auth0.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF572B281E46F86900CAEC10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF572B331E46F86900CAEC10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E3476C89D44D7E29AE424ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4486FB728694AE2D747C3DEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Savour/Pods-Savour-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4590C46342EE5F1E75E8AD13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Savour/Pods-Savour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6971EEE83E57C134280B3013 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		805CE009DB47D80C2C4AB431 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SavourUITests/Pods-SavourUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		965965F6FB744EEB43A58606 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9C87377DBF6429A930A720B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SavourUITests/Pods-SavourUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF572B551E47033300CAEC10 /* Swiftlint Autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftlint Autocorrect";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		CF572B561E47033900CAEC10 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		E0FB3BCBCA986056A1E9D01A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SavourTests/Pods-SavourTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE3EAD9A36E3FDA484F4D27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SavourTests/Pods-SavourTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF572B121E46F86800CAEC10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF572B4C1E46FE4E00CAEC10 /* SVLoginManager.swift in Sources */,
+				CF572B501E47006500CAEC10 /* SVLoginViewController.swift in Sources */,
+				CF572B4E1E46FFAD00CAEC10 /* SVRootViewController.swift in Sources */,
+				CF572B541E4700CD00CAEC10 /* Constants.swift in Sources */,
+				CF572B1A1E46F86800CAEC10 /* AppDelegate.swift in Sources */,
+				CF572B521E47008500CAEC10 /* SVUser.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF572B261E46F86900CAEC10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF572B2F1E46F86900CAEC10 /* SavourTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF572B311E46F86900CAEC10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF572B3A1E46F86900CAEC10 /* SavourUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF572B2C1E46F86900CAEC10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF572B151E46F86800CAEC10 /* Savour */;
+			targetProxy = CF572B2B1E46F86900CAEC10 /* PBXContainerItemProxy */;
+		};
+		CF572B371E46F86900CAEC10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF572B151E46F86800CAEC10 /* Savour */;
+			targetProxy = CF572B361E46F86900CAEC10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF572B221E46F86800CAEC10 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF572B231E46F86800CAEC10 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF572B3C1E46F86900CAEC10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF572B3D1E46F86900CAEC10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF572B3F1E46F86900CAEC10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7593120259333CF36ABF9C4 /* Pods-Savour.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92V759CL73;
+				INFOPLIST_FILE = Savour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.ichef.Savour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CF572B401E46F86900CAEC10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44BBDFA15E5C06A44AA0EC33 /* Pods-Savour.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92V759CL73;
+				INFOPLIST_FILE = Savour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.ichef.Savour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CF572B421E46F86900CAEC10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4619E628B0FF4AAB5B20D5 /* Pods-SavourTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 92V759CL73;
+				INFOPLIST_FILE = SavourTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.ichef.SavourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Savour.app/Savour";
+			};
+			name = Debug;
+		};
+		CF572B431E46F86900CAEC10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E67D4D2408B0F6A48E1EA3DE /* Pods-SavourTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 92V759CL73;
+				INFOPLIST_FILE = SavourTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.ichef.SavourTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Savour.app/Savour";
+			};
+			name = Release;
+		};
+		CF572B451E46F86900CAEC10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D325B2DCC16021CA0FBF8F1 /* Pods-SavourUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 92V759CL73;
+				INFOPLIST_FILE = SavourUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.ichef.SavourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Savour;
+			};
+			name = Debug;
+		};
+		CF572B461E46F86900CAEC10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37CF83CA9F6C03028905C6A4 /* Pods-SavourUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 92V759CL73;
+				INFOPLIST_FILE = SavourUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tw.com.ichef.SavourUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Savour;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF572B111E46F86800CAEC10 /* Build configuration list for PBXProject "Savour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF572B3C1E46F86900CAEC10 /* Debug */,
+				CF572B3D1E46F86900CAEC10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF572B3E1E46F86900CAEC10 /* Build configuration list for PBXNativeTarget "Savour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF572B3F1E46F86900CAEC10 /* Debug */,
+				CF572B401E46F86900CAEC10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF572B411E46F86900CAEC10 /* Build configuration list for PBXNativeTarget "SavourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF572B421E46F86900CAEC10 /* Debug */,
+				CF572B431E46F86900CAEC10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF572B441E46F86900CAEC10 /* Build configuration list for PBXNativeTarget "SavourUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF572B451E46F86900CAEC10 /* Debug */,
+				CF572B461E46F86900CAEC10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF572B0E1E46F86800CAEC10 /* Project object */;
+}
