@@ -11,27 +11,29 @@ import FontAwesome_swift
 
 class SVRootViewController: UITabBarController {
     
-    var explorerVC: SVExplorerViewController {
+    //MARK: - Properties
+    private lazy var explorerVC: SVExplorerViewController = {
         let vc = SVExplorerViewController()
-        let image = UIImage.fontAwesomeIcon(name: .mapMarker, textColor: UIColor.blue, size: CGSize(width: 32.0, height: 32.0))
+        let image = UIImage.fontAwesomeIcon(name: .mapMarker, textColor: UIColor.blue, size: CGSize(width: Constants.IconSize.tabIconSize, height: Constants.IconSize.tabIconSize))
         vc.tabBarItem = UITabBarItem(title: "Explore", image: image, tag: 0)
         return vc
-    }
+    }()
     
-    var scannerVC: SVScannerViewController {
+    private lazy var scannerVC: SVScannerViewController = {
         let vc = SVScannerViewController()
-        let image = UIImage.fontAwesomeIcon(name: .qrcode, textColor: UIColor.blue, size: CGSize(width: 32.0, height: 32.0))
+        let image = UIImage.fontAwesomeIcon(name: .qrcode, textColor: UIColor.blue, size: CGSize(width: Constants.IconSize.tabIconSize, height: Constants.IconSize.tabIconSize))
         vc.tabBarItem = UITabBarItem(title: "Scan", image: image, tag: 1)
         return vc
-    }
+    }()
 
-    var userVC: SVUserViewController {
+    private lazy var userVC: SVUserViewController = {
         let vc = SVUserViewController()
-        let image = UIImage.fontAwesomeIcon(name: .userSecret, textColor: UIColor.blue, size: CGSize(width: 32.0, height: 32.0))
+        let image = UIImage.fontAwesomeIcon(name: .userSecret, textColor: UIColor.blue, size: CGSize(width: Constants.IconSize.tabIconSize, height: Constants.IconSize.tabIconSize))
         vc.tabBarItem = UITabBarItem(title: "Account", image: image, tag: 2)
         return vc
-    }
+    }()
 
+    //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white

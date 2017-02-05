@@ -20,6 +20,8 @@ class SVUserViewController: UIViewController {
         button.setTitle("Logout", for: .normal)
         button.addTarget(self, action: #selector(testLogout), for: .touchUpInside)
         self.view.addSubview(button)
+        
+        //neet a static table view controller to display user profile and layout with IGListKit
     }
 
 }

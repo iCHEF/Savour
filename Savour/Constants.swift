@@ -16,4 +16,8 @@ struct Constants {
         static let idToken = "id_token"
         static let profile = "profile"
     }
+    
+    struct IconSize {
+        static let tabIconSize = 32.0
+    }
 }
