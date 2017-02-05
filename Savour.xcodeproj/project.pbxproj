@@ -20,6 +20,9 @@
 		CF572B501E47006500CAEC10 /* SVLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B4F1E47006500CAEC10 /* SVLoginViewController.swift */; };
 		CF572B521E47008500CAEC10 /* SVUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B511E47008500CAEC10 /* SVUser.swift */; };
 		CF572B541E4700CD00CAEC10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B531E4700CD00CAEC10 /* Constants.swift */; };
+		CF572B581E473F2F00CAEC10 /* SVScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B571E473F2F00CAEC10 /* SVScannerViewController.swift */; };
+		CF572B5A1E473F7C00CAEC10 /* SVExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B591E473F7C00CAEC10 /* SVExplorerViewController.swift */; };
+		CF572B5C1E473FA900CAEC10 /* SVUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF572B5B1E473FA900CAEC10 /* SVUserViewController.swift */; };
 		F607AF15B8E5B72B2E7D8E4A /* Pods_SavourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF0E738B87FCF0D37B890EE /* Pods_SavourUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,9 @@
 		CF572B4F1E47006500CAEC10 /* SVLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVLoginViewController.swift; sourceTree = "<group>"; };
 		CF572B511E47008500CAEC10 /* SVUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVUser.swift; sourceTree = "<group>"; };
 		CF572B531E4700CD00CAEC10 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CF572B571E473F2F00CAEC10 /* SVScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVScannerViewController.swift; sourceTree = "<group>"; };
+		CF572B591E473F7C00CAEC10 /* SVExplorerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVExplorerViewController.swift; sourceTree = "<group>"; };
+		CF572B5B1E473FA900CAEC10 /* SVUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVUserViewController.swift; sourceTree = "<group>"; };
 		DB4619E628B0FF4AAB5B20D5 /* Pods-SavourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavourTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavourTests/Pods-SavourTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E5C7DDAA2EAB92F1362B49B8 /* Pods_SavourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67D4D2408B0F6A48E1EA3DE /* Pods-SavourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavourTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SavourTests/Pods-SavourTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +195,9 @@
 			isa = PBXGroup;
 			children = (
 				CF572B4D1E46FFAD00CAEC10 /* SVRootViewController.swift */,
+				CF572B571E473F2F00CAEC10 /* SVScannerViewController.swift */,
+				CF572B591E473F7C00CAEC10 /* SVExplorerViewController.swift */,
+				CF572B5B1E473FA900CAEC10 /* SVUserViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -509,8 +518,11 @@
 			files = (
 				CF572B4C1E46FE4E00CAEC10 /* SVLoginManager.swift in Sources */,
 				CF572B501E47006500CAEC10 /* SVLoginViewController.swift in Sources */,
+				CF572B5A1E473F7C00CAEC10 /* SVExplorerViewController.swift in Sources */,
 				CF572B4E1E46FFAD00CAEC10 /* SVRootViewController.swift in Sources */,
 				CF572B541E4700CD00CAEC10 /* Constants.swift in Sources */,
+				CF572B5C1E473FA900CAEC10 /* SVUserViewController.swift in Sources */,
+				CF572B581E473F2F00CAEC10 /* SVScannerViewController.swift in Sources */,
 				CF572B1A1E46F86800CAEC10 /* AppDelegate.swift in Sources */,
 				CF572B521E47008500CAEC10 /* SVUser.swift in Sources */,
 			);

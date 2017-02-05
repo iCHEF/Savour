@@ -9,6 +9,7 @@ target 'Savour' do
   pod 'Lock', '~> 1.28'
   pod 'Auth0', '~> 1.1'
   pod 'ChameleonFramework'
+  pod 'FontAwesome.swift'
   pod 'SimpleKeychain'
   pod 'RxSwift', '~> 3.0'
   pod 'RxCocoa', '~> 3.0'

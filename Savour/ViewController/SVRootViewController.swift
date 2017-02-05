@@ -7,26 +7,50 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
-class SVRootViewController: UIViewController {
+class SVRootViewController: UITabBarController {
+    
+    var explorerVC: SVExplorerViewController {
+        let vc = SVExplorerViewController()
+        let image = UIImage.fontAwesomeIcon(name: .mapMarker, textColor: UIColor.blue, size: CGSize(width: 32.0, height: 32.0))
+        vc.tabBarItem = UITabBarItem(title: "Explore", image: image, tag: 0)
+        return vc
+    }
+    
+    var scannerVC: SVScannerViewController {
+        let vc = SVScannerViewController()
+        let image = UIImage.fontAwesomeIcon(name: .qrcode, textColor: UIColor.blue, size: CGSize(width: 32.0, height: 32.0))
+        vc.tabBarItem = UITabBarItem(title: "Scan", image: image, tag: 1)
+        return vc
+    }
+
+    var userVC: SVUserViewController {
+        let vc = SVUserViewController()
+        let image = UIImage.fontAwesomeIcon(name: .userSecret, textColor: UIColor.blue, size: CGSize(width: 32.0, height: 32.0))
+        vc.tabBarItem = UITabBarItem(title: "Account", image: image, tag: 2)
+        return vc
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        // Do any additional setup after loading the view.
+        self.delegate = self
         
-        let button = UIButton(type: .system)
-        button.frame = (frame: CGRect(x: self.view.frame.size.width/2 - 100, y: self.view.frame.size.height-50, width: 200, height: 50))
-        button.setTitleColor(UIColor.blue, for: .normal)
-        button.setTitle("Logout", for: .normal)
-        button.addTarget(self, action: #selector(testLogout), for: .touchUpInside)
-        self.view.addSubview(button)
+        //arrange rootViewControllers
+        self.viewControllers = [self.explorerVC, self.scannerVC, self.userVC]
     }
     
-    func testLogout() {
-        let loginManager = SVLoginManager()
-        loginManager.logout()
-        show(SVLoginViewController(), sender: nil )
-    }
+}
 
+private typealias PrivateMethods = SVRootViewController
+extension PrivateMethods {
+    
+}
+
+private typealias TabBarControllerDelegateMethods = SVRootViewController
+extension TabBarControllerDelegateMethods: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        
+    }
 }

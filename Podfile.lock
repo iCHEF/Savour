@@ -18,6 +18,7 @@ PODS:
   - ChameleonFramework (2.1.0):
     - ChameleonFramework/Default (= 2.1.0)
   - ChameleonFramework/Default (2.1.0)
+  - FontAwesome.swift (1.0.0)
   - Lock (1.28.0):
     - Lock/Core (= 1.28.0)
     - Lock/UI (= 1.28.0)
@@ -40,6 +41,7 @@ PODS:
 DEPENDENCIES:
   - Auth0 (~> 1.1)
   - ChameleonFramework
+  - FontAwesome.swift
   - Lock (~> 1.28)
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
@@ -49,12 +51,13 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Auth0: 7622194627c22979a87c3e3e234fecd93bf2de47
   ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
+  FontAwesome.swift: 2d32a3d62195343c2004b7c9043294ed2948553a
   Lock: f66a990dccd844d393c5803e40bf6c9eca05ef2d
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
   RxCocoa: 15a52fc590dcc700cb4a690a633b5c5184ce3a78
   RxSwift: af5680055c4ad04480189c52d28385b1029493a6
   SimpleKeychain: b50cef3b87939d480ea1143425c00f5b4b70fe21
 
-PODFILE CHECKSUM: 64a60ce340c1a87a01dbb622eba7d3714dc775e9
+PODFILE CHECKSUM: c4d34c6127d5b77b502d85ed28637e17fa346553
 
 COCOAPODS: 1.1.1
